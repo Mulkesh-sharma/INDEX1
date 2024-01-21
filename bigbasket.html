@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigbasket-Nandni </title>
+    <link rel="stylesheet" href="./bigbasket.css">
+</head>
+<body>
+    <div id="navbar1">
+        <button type="button" onclick="Show_filter()">Hide Filter</button>
+        <div id="navbar" class="option-container">
+        
+        
+
+            <div id="category1">
+            <h5>Exotic Fruits and Viggies</h5><br>
+            
+            </div>
+
+            <div id="supersaver">
+                <img src="https://www.bigbasket.com/media/uploads/Supersaver+Toggle+Final.png?tr=w-128,q=80" id="img" alt="img=">
+                <label >
+                    <input placeholder="Toggle" type="range" id="modeSlider" onclick="toggleMode() "><br>
+                </label>
+            </div>
+
+            
+                <button class="filter-btn" onclick="toggleFilter()">Brands</button>
+                <div  id="filterOptions">
+                    
+                    
+                    <label class="brand-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="brand1"> Ambrosia
+                    </label><br>
+                    <label class="brand-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="brand2"> bb combo
+                    </label><br>
+                    <label class="brand-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="brand3"> fresho
+                    </label><br>
+                    <label class="brand-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="brand3"> organic
+                    </label><br>
+                    <label class="brand-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="brand3"> simply fresh
+                    </label><br>
+                    <label class="brand-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="brand3"> Supa corn
+                    </label><br>
+                    <label class="brand-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="brand3"> SV agri carisma
+                    </label><br>
+                    <label class="brand-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="brand3"> tada
+                    </label><br>
+                    <label class="brand-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="brand3"> trikaya
+                    </label></div><br>
+                
+                    <button class="filter-btn" onclick="toggleRatings()"><b>Ratings :</b></button>
+                <div  id="Ratings">
+                    
+                    <label class="rating-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="5"> 5 stars
+                    </label><br>
+                    <label class="rating-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="4"> 4 stars
+                    </label><br>
+                    <label class="rating-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="3"> 3 stars
+                    </label><br>
+                    <label class="rating-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="2"> 2 stars
+                    </label><br>
+                    <label class="rating-checkbox">
+                    <input type="checkbox" onchange="FilterItems1()" value="1"> 1 star
+                    </label></div><br>
+                    
+                
+            
+            <label for="Discount" title="Discount">
+                
+                <select id="Discount1" name="Discount">
+                    <option onchange="FilterItems1()" value="">Discount</option>
+                    <option onchange="FilterItems1()" value="70%">Discount Above to 70%</option>
+                    <option onchange="FilterItems1()" value="50%">Discount up to 50%</option>
+                    <option onchange="FilterItems1()" value="25%">Discount up to 25%</option>
+                </select>
+            </label><br>
+
+            <button class="filter-btn" onclick="toggleCountry()"><b>Country Of Origin</b></button>
+                <div  id="Country">
+            
+                
+                <label class="Country-origin">
+                <input type="checkbox" onchange="FilterItems1()" value="Country"> Australia
+                </label><br>
+                <label class="Country-origin">
+                <input type="checkbox" onchange="FilterItems1()" value="Country"> chile
+                </label><br>
+                <label class="Country-origin">
+                <input type="checkbox" onchange="FilterItems1()" value="Country"> china
+                </label><br>
+                <label class="Country-origin">
+                    <input type="checkbox" onchange="FilterItems1()" value="Country"> Egypt
+                    </label><br>
+                    <label class="Country-origin">
+                    <input type="checkbox" onchange="FilterItems1()" value="Country"> Grece
+                    </label><br>
+                    <label class="Country-origin">
+                    <input type="checkbox" onchange="FilterItems1()" value="Country"> Iran
+                </label><br>
+                <label class="Country-origin">
+                    <input type="checkbox" onchange="FilterItems1()" value="Country"> India
+                    </label><br>
+                    <label class="Country-origin">
+                    <input type="checkbox" onchange="FilterItems1()" value="Country"> Itly
+                    </label><br>
+                    <label class="Country-origin">
+                    <input type="checkbox" onchange="FilterItems1()" value="Country"> New Zealand
+                </label>    <br>
+                
+                <label class="Country-origin">
+                    <input type="checkbox" onchange="FilterItems1()" value="Country"> Peru
+                    </label><br>
+                    <label class="Country-origin">
+                    <input type="checkbox" onchange="FilterItems1()" value="Country"> South Africa
+                    </label><br>
+                    <label class="Country-origin">
+                    <input type="checkbox" onchange="FilterItems1()" value="Country"> USA
+                    </label><br>
+            </label></div><br>
+            
+            <label for="Food Preferences">
+                <button class="filter-btn" onclick="toggleFood()"><b>Food Preferences</b></button>
+                <div  id="Food">
+                <label class="Food-Preferences">
+                    <input type="checkbox" onchange="FilterItems1()" value="Food Preferences"> Vegeterian
+                    </label><br>
+                    <label class="Food-Preferences">
+                        <input type="checkbox" onchange="FilterItems1()" value="Food Preferences"> Non Vegeterian
+                        </label><br>
+                    
+            </label></div><br>
+            
+            <label for="Product Type">
+                <button class="filter-btn" onclick="toggleproduct()"><b>Product Type</b></button>
+                <div  id="product">
+                <label class="Product-Type">
+                    <input type="checkbox" onchange="FilterItems1()" value="Product Type"> Super Saver
+                    </label>
+            </label></div><br>
+
+            
+            <label for="Seasonal">
+                <button class="filter-btn" onclick="toggleSeasonal()"><b>Seasonal</b></button>
+                <div  id="Seasonal">
+                <label class="Seasonal">
+                    <input type="checkbox" onchange="FilterItems1()" value="Seasonal"> Summer Fruits
+                </label><br>
+                <label class="Seasonal">
+                    <input type="checkbox" onchange="FilterItems1()" value="Seasonal"> Winter Fruits
+                </label><br>
+                <label class="Seasonal">
+                    <input type="checkbox" onchange="FilterItems1()" value="Seasonal"> Summer Veggies
+                </label><br>
+                <label class="Seasonal">
+                    <input type="checkbox" onchange="FilterItems1()" value="Seasonal"> Winter Veggies
+                    </label></div><br>
+            </label>
+            
+            <label for="Pack Size">
+                <button class="filter-btn" onclick="togglePacking()"><b>Pack size</b></button>
+                <div  id="Packing">
+                <label class="Pack-size">
+                    <input type="checkbox" onchange="FilterItems1()" value="300g"> Upto 300g
+                    </label><br>
+            
+            <label class="Pack-size">
+                <input type="checkbox" onchange="FilterItems1()" value="4_combo"> Combo 4 item
+                </label><br>
+        
+        <label class="Pack-size">
+            <input type="checkbox" onchange="FilterItems1()" value="2_combo"> Combo 2 items
+        </label><br>
+        <label class="Pack-size">
+            <input type="checkbox" onchange="FilterItems1()" value="500g"> Upto 500g
+        </label><br>
+        <label class="Pack-size">
+            <input type="checkbox" onchange="FilterItems1()" value="90g"> Upto 80g-90g
+        </label><br>
+        <label class="Pack-size">
+            <input type="checkbox" onchange="FilterItems1()" value="6_Pcs"> 6 Pcs
+        </label><br>
+        <label class="Pack-size">
+            <input type="checkbox" onchange="FilterItems1()" value="8_Pcs"> 8 Pcs
+        </label><br>
+        <label class="Pack-size">
+            <input type="checkbox" onchange="FilterItems1()" value="1000g"> Upto 1kg
+        </label><br>
+        <label class="Pack-size">
+            <input type="checkbox" onchange="FilterItems1()" value="250g"> Upto 250g
+        </label></div><br>
+
+    </label></div>
+            
+
+        </div>
+        <div id="items">
+
+            <div class="items1">
+
+            
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000063_20-fresho-broccoli.jpg?tr=w-1920,q=80" alt="img" >
+            <p class="Item-name">Broccali</p>
+            <p class="Price">Price : ₹89</p>
+            <p class="Discount2">Discount : 25%</p>
+            <p class="quantity">Quantity : 500g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000273_16-fresho-mushrooms-button.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Mashrooms-Button</p>
+            <p class="Price">Price : ₹69</p>
+            <p class="Discount2">Discount : 25%</p>
+            <p class="quantity">Quantity : 200g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40163718_11-fresho-frozen-green-peas.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Frozen green Peas</p>
+            <p class="Price" >Price : ₹179</p>
+            <p class="Discount2">Discount : 25%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000150_19-fresho-onion.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Onion (loose)</p>
+            <p class="Price">Price : ₹195</p>
+            <p class="Discount2">Discount : 40%</p>
+            <p class="quantity">Quantity : 5kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40208830_10-fresho-frozen-sweet-corn.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Frozen Sweet Corn</p>
+            <p class="Price">Price : ₹139</p>
+            <p class="Discount2">Discount : 31%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000159_27-fresho-potato.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Potato</p>
+            <p class="Price">Price : ₹42</p>
+            <p class="Discount2">Discount : 29%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000070_15-fresho-carrot-orange.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Carrot-orange (loose)</p>
+            <p class="Price">Price : ₹66</p>
+            <p class="Discount2">Discount : 40%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000203_16-fresho-tomato-local.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Tomato-Local(loose)</p>
+            <p class="Price">Price : ₹29</p>
+            <p class="Discount2">Discount : 31%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/1222181_1-fresho-orange-nagpur-regular.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Orange</p>
+            <p class="Price">Price : ₹108</p>
+            <p class="Discount2">Discount : 37%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000067_23-fresho-capsicum-green.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Capsicum-green(loose)</p>
+            <p class="Price">Price : ₹48</p>
+            <p class="Discount2">Discount : 49%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000326_14-fresho-coriander-leaves.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">coriander-leaves</p>
+            <p class="Price">Price : ₹71</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000200_18-fresho-tomato-hybrid.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Tomato-hybrid</p>
+            <p class="Price">Price : ₹39</p>
+            <p class="Discount2">Discount : 29%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000102_18-fresho-cucumber.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">cucumber</p>
+            <p class="Price">Price : ₹24</p>
+            <p class="Discount2">Discount : 40%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40089743_2-fresho-beans-haricot.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Beans-haricot(loose)</p>
+            <p class="Price">Price : ₹19</p>
+            <p class="Discount2">Discount : 58%</p>
+            <p class="quantity">Quantity : 250g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000074_19-fresho-cauliflower.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Cauliflower</p>
+            <p class="Price">Price : ₹21</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000031_21-fresho-banana-yelakki.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Banana-yelakki</p>
+            <p class="Price">Price : ₹85</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 12pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000045_18-fresho-beetroot.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Beetroot</p>
+            <p class="Price">Price : ₹40</p>
+            <p class="Discount2">Discount : 45%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40120006_6-fresho-pomegranate-small.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Promegrnate</p>
+            <p class="Price">Price : ₹136.6</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000187_14-fresho-palak-cleaned-without-roots.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Palak-cleaned</p>
+            <p class="Price">Price : ₹65</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000143_14-fresho-ladies-finger.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Ladie's-finger</p>
+            <p class="Price">Price : ₹16.5</p>
+            <p class="Discount2">Discount : 54%</p>
+            <p class="quantity">Quantity : 250g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000025_27-fresho-banana-robusta.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Banana-robust</p>
+            <p class="Price">Price : ₹45</p>
+            <p class="Discount2">Discount : 41%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000093_16-fresho-coconut-medium.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Coconut-medium</p>
+            <p class="Price">Price : ₹25</p>
+            <p class="Discount2">Discount : 38%</p>
+            <p class="quantity">Quantity : 1pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/50000513_3-fresho-chilli-green-organically-grown.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Green Chilie</p>
+            <p class="Price">Price : ₹56.5</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 500g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40134281_14-fresho-baby-apple-shimla.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Baby Apple (shimla)</p>
+            <p class="Price">Price : ₹190</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/20000911_32-fresho-kiwi-green.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">kivi green</p>
+            <p class="Price">Price : ₹110</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 3pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000066_25-fresho-cabbage.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Cabbage</p>
+            <p class="Price">Price : ₹17</p>
+            <p class="Discount2">Discount : 37%</p>
+            <p class="quantity">Quantity : 1pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/1203769_1-fresho-apple-shimla-regular.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Apple-regular (shimla)</p>
+            <p class="Price">Price : ₹280</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 2*4(pack)</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40057966_6-fresho-tender-coconut-medium.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Coconut-medium</p>
+            <p class="Price">Price : ₹32.6</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000117_17-fresho-ginger.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">ginger</p>
+            <p class="Price">Price : ₹18</p>
+            <p class="Discount2">Discount : 36%</p>
+            <p class="quantity">Quantity : 100g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/20000745_5-fresho-bottle-gourd.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Bottle-guard</p>
+            <p class="Price">Price : ₹21.7</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000207_24-fresho-watermelon-small.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Watermelon</p>
+            <p class="Price">Price : ₹100</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000599_12-fresho-cucumber-english.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Cucumber</p>
+            <p class="Price">Price : ₹17</p>
+            <p class="Discount2">Discount : 73%</p>
+            <p class="quantity">Quantity : 500g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000005_27-fresho-apple-royal-gala-economy.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Apple-royal-gala</p>
+            <p class="Price">Price : ₹132</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 4pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000345_18-fresho-banana-nendran.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Banana-nendran</p>
+            <p class="Price">Price : ₹21</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 500g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000176_15-fresho-ridge-gourd.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Ridge-gourd</p>
+            <p class="Price">Price : ₹21</p>
+            <p class="Discount2">Discount : 61%</p>
+            <p class="quantity">Quantity : 500g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40008982_15-fresho-dragon-fruit.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Dragon-Fruit</p>
+            <p class="Price">Price : ₹73</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000058_20-fresho-brinjal-varikatri.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Brinjal-Varikatri</p>
+            <p class="Price">Price : ₹55</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/20003955_2-fresho-baby-orange.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Baby-orange</p>
+            <p class="Price">Price : ₹323</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40296057_3-fresho-papaya.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Papaya</p>
+            <p class="Price">Price : ₹52</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40004992_14-fresho-sweet-corn.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">sweet-corn</p>
+            <p class="Price">Price : ₹55</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 2pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000269_32-fresho-pomegranate.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Pomegranate</p>
+            <p class="Price">Price : ₹121</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 4pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/1202322_1-fresho-pear-green-imported.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Pear-green-imported</p>
+            <p class="Price">Price : ₹292</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 2*4</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000116_16-fresho-garlic.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">garlic</p>
+            <p class="Price">Price : ₹123</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 500g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000334_15-fresho-drumstickmoringa.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Drum-sticker</p>
+            <p class="Price">Price : ₹311</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/30009284_8-fresho-avocado-imported-medium.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Avocado-medium-imported</p>
+            <p class="Price">Price : ₹115</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000128_17-fresho-lemon.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Lemon</p>
+            <p class="Price">Price : ₹71.5</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 500g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40050957_4-fresho-onion-organically-grown.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Onion</p>
+            <p class="Price">Price : ₹171.5</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 5kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000053_18-fresho-brinjal-bottle-shape.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Branjal-bottle-shape</p>
+            <p class="Price">Price : ₹61.5</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40094039_10-fresho-orange-nagpur-small.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Orange-nagpur-small</p>
+            <p class="Price">Price : ₹110</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 2kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000332_15-fresho-amla.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">amla</p>
+            <p class="Price">Price : ₹141.4</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/30002322_11-fresho-guava-thai.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Guava-thai</p>
+            <p class="Price">Price : ₹43.2</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40114961_4-fresho-papaya-small.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Papaya</p>
+            <p class="Price">Price : ₹49.5</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1pcs</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/1203447_1-fresho-garlic-peeled.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">harlic-peeled</p>
+            <p class="Price">Price : ₹148</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 3*100g</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/30009286_9-fresho-blueberry.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">BlueBerry</p>
+            <p class="Price">Price : ₹323</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 125%</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/1203783_1-fresho-apple-royal-gala-regular.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Apple_royal-regular</p>
+            <p class="Price">Price : ₹282</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40105338_2-fresho-mosambi-economy.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Mosambi</p>
+            <p class="Price">Price : ₹196.6</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 3kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000272_15-fresho-carrot-ooty.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">Carrot-ooty</p>
+            <p class="Price">Price : ₹69.7</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+            <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000048_21-fresho-bitter-gourd.jpg?tr=w-1920,q=80" alt="img">
+            <p class="Item-name">gourd</p>
+            <p class="Price">Price : ₹65</p>
+            <p class="Discount2">Discount : 27%</p>
+            <p class="quantity">Quantity : 1kg</p>
+            <button class="addtocart" >Add to Cart</button>
+            </div>
+
+            <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/50000513_3-fresho-chilli-green-organically-grown.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Green Chilie</p>
+                <p class="Price">Price : ₹56.5</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 500g</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40134281_14-fresho-baby-apple-shimla.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Baby Apple (shimla)</p>
+                <p class="Price">Price : ₹190</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/20000911_32-fresho-kiwi-green.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">kivi green</p>
+                <p class="Price">Price : ₹110</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 3pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000066_25-fresho-cabbage.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Cabbage</p>
+                <p class="Price">Price : ₹17</p>
+                <p class="Discount2">Discount : 37%</p>
+                <p class="quantity">Quantity : 1pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/1203769_1-fresho-apple-shimla-regular.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Apple-regular (shimla)</p>
+                <p class="Price">Price : ₹280</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 2*4(pack)</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40057966_6-fresho-tender-coconut-medium.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Coconut-medium</p>
+                <p class="Price">Price : ₹32.6</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000117_17-fresho-ginger.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">ginger</p>
+                <p class="Price">Price : ₹18</p>
+                <p class="Discount2">Discount : 36%</p>
+                <p class="quantity">Quantity : 100g</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/20000745_5-fresho-bottle-gourd.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Bottle-guard</p>
+                <p class="Price">Price : ₹21.7</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000207_24-fresho-watermelon-small.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Watermelon</p>
+                <p class="Price">Price : ₹100</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000599_12-fresho-cucumber-english.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Cucumber</p>
+                <p class="Price">Price : ₹17</p>
+                <p class="Discount2">Discount : 73%</p>
+                <p class="quantity">Quantity : 500g</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000005_27-fresho-apple-royal-gala-economy.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Apple-royal-gala</p>
+                <p class="Price">Price : ₹132</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 4pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000345_18-fresho-banana-nendran.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Banana-nendran</p>
+                <p class="Price">Price : ₹21</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 500g</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000176_15-fresho-ridge-gourd.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Ridge-gourd</p>
+                <p class="Price">Price : ₹21</p>
+                <p class="Discount2">Discount : 61%</p>
+                <p class="quantity">Quantity : 500g</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40008982_15-fresho-dragon-fruit.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Dragon-Fruit</p>
+                <p class="Price">Price : ₹73</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000058_20-fresho-brinjal-varikatri.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Brinjal-Varikatri</p>
+                <p class="Price">Price : ₹55</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/20003955_2-fresho-baby-orange.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Baby-orange</p>
+                <p class="Price">Price : ₹323</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40296057_3-fresho-papaya.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Papaya</p>
+                <p class="Price">Price : ₹52</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40004992_14-fresho-sweet-corn.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">sweet-corn</p>
+                <p class="Price">Price : ₹55</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 2pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000269_32-fresho-pomegranate.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Pomegranate</p>
+                <p class="Price">Price : ₹121</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 4pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/1202322_1-fresho-pear-green-imported.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Pear-green-imported</p>
+                <p class="Price">Price : ₹292</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 2*4</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000116_16-fresho-garlic.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">garlic</p>
+                <p class="Price">Price : ₹123</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 500g</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000334_15-fresho-drumstickmoringa.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Drum-sticker</p>
+                <p class="Price">Price : ₹311</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/30009284_8-fresho-avocado-imported-medium.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Avocado-medium-imported</p>
+                <p class="Price">Price : ₹115</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000128_17-fresho-lemon.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Lemon</p>
+                <p class="Price">Price : ₹71.5</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 500g</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40050957_4-fresho-onion-organically-grown.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Onion</p>
+                <p class="Price">Price : ₹171.5</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 5kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000053_18-fresho-brinjal-bottle-shape.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Branjal-bottle-shape</p>
+                <p class="Price">Price : ₹61.5</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40094039_10-fresho-orange-nagpur-small.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Orange-nagpur-small</p>
+                <p class="Price">Price : ₹110</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 2kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000332_15-fresho-amla.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">amla</p>
+                <p class="Price">Price : ₹141.4</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/30002322_11-fresho-guava-thai.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Guava-thai</p>
+                <p class="Price">Price : ₹43.2</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40114961_4-fresho-papaya-small.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Papaya</p>
+                <p class="Price">Price : ₹49.5</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1pcs</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/1203447_1-fresho-garlic-peeled.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">harlic-peeled</p>
+                <p class="Price">Price : ₹148</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 3*100g</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/30009286_9-fresho-blueberry.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">BlueBerry</p>
+                <p class="Price">Price : ₹323</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 125%</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/1203783_1-fresho-apple-royal-gala-regular.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Apple_royal-regular</p>
+                <p class="Price">Price : ₹282</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/40105338_2-fresho-mosambi-economy.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Mosambi</p>
+                <p class="Price">Price : ₹196.6</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 3kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000272_15-fresho-carrot-ooty.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">Carrot-ooty</p>
+                <p class="Price">Price : ₹69.7</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+    
+                <div class="items1">
+                <img class="img1" src="https://www.bigbasket.com/media/uploads/p/m/10000048_21-fresho-bitter-gourd.jpg?tr=w-1920,q=80" alt="img">
+                <p class="Item-name">gourd</p>
+                <p class="Price">Price : ₹65</p>
+                <p class="Discount2">Discount : 27%</p>
+                <p class="quantity">Quantity : 1kg</p>
+                <button class="addtocart" >Add to Cart</button>
+                </div>
+
+                
+
+    </div>
+    <button type="button" onclick="Show_relevence()">Relevence </button>
+                <div id="ShowRelevence">
+                <label for="reletive">
+                    <input type="checkbox" placeholder="reletive">
+                </label>
+                </div>
+
+    <script>
+        
+    var isOn = false;
+
+    function toggleMode() {
+    var slider = document.getElementById("modeSlider");
+
+    if (isOn) {
+        slider.removeAttribute("checked");
+    } else {
+        slider.setAttribute("checked", "checked");
+    }
+
+    isOn = !isOn;
+      // Automatically slide the slider
+    slider.value = isOn ? 100 : 0;
+    }
+
+    function addcart() {
+        
+    }
+
+    function Show_filter() {
+        var optionContainer = document.getElementById("navbar");
+        optionContainer.style.display = (optionContainer.style.display === "none" || optionContainer.style.display === "") ? "block" : "none" ;
+
+    }
+
+    function toggleFilter() {
+        var filter1 = document.getElementById("filterOptions");
+        filter1.style.display = (filter1.style.display === "none" || filter1.style.display === "") ? "block" : "none" ;
+    }
+    
+    function toggleRatings() {
+        var filter2 = document.getElementById("Ratings");
+        filter2.style.display = (filter2.style.display === "none" || filter2.style.display === "") ? "block" : "none" ;
+    }
+
+    function toggleCountry() {
+        var filter3 = document.getElementById("Country");
+        filter3.style.display = (filter3.style.display === "none" || filter3.style.display === "") ? "block" : "none" ;
+    }
+
+    function toggleFood() {
+        var filter4 = document.getElementById("Food");
+        filter4.style.display = (filter4.style.display === "none" || filter4.style.display === "") ? "block" : "none" ;
+    }
+
+    function toggleproduct() {
+        var filter5 = document.getElementById("product");
+        filter5.style.display = (filter5.style.display === "none" || filter5.style.display === "") ? "block" : "none" ;
+    }
+
+    function toggleSeasonal() {
+        var filter6 = document.getElementById("Seasonal");
+        filter6.style.display = (filter6.style.display === "none" || filter6.style.display === "") ? "block" : "none" ;
+    }
+
+    function togglePacking() {
+        var filter7 = document.getElementById("Packing");
+        filter7.style.display = (filter7.style.display === "none" || filter7.style.display === "") ? "block" : "none" ;
+    }
+
+    function FilterItems1() {
+        var selectedOptions = document.querySelectorAll('.option-container input:checked');
+        var itemsN = document.querySelectorAll('.itemsN')
+
+        items.forEach(function(item){
+            item.style.display = "none"
+        });
+
+        selectedOptions.forEach(function(option){
+            var className = option.value;
+            items.forEach(function(item){
+                if(item.classList.contains(className)){
+                    item.style.display = "block"
+                }
+            });
+        });
+            
+        
+    }
+    </script> 
+    
+</body>
+</html>
+
